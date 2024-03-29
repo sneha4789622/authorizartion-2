@@ -1,0 +1,30 @@
+###
+
+GET http://localhost:3000/books/
+Authorization: Bearer JWT_TOKEN {
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzExNjk2MjU5fQ.y3EA_tiPp2biVrG1JVGtSpLTX7xO_2YlRPV3-DzKXqs"
+}
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"rahul",
+    "username":"rahul123",
+    "password": "rahul@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"rahul123",
+    "password": "rahul@456"
+}
